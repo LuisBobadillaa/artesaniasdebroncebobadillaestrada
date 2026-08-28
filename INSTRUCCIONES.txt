@@ -1,0 +1,3 @@
+1. Copia todas tus imágenes (1.png, 2.png, etc.) dentro de la carpeta 'imagenes'.
+2. No cambies el nombre de index.html.
+3. Sube index.html y la carpeta 'imagenes' a GitHub Pages.

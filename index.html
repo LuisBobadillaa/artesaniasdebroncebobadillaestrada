@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#090b10">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Artesanías de Bronce Bobadilla">
+    <meta property="og:description" content="Fundición artesanal, piezas personalizadas, esculturas, placas, trofeos y trabajos especiales en bronce.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artesanías de Bronce Bobadilla. Fundición artesanal, piezas personalizadas, esculturas, placas, trofeos y trabajos especiales en bronce.">
+    <title>Artesanías de Bronce Bobadilla Esrada | Fundición Artesanal</title>
+
+    <!-- Guarda tu logo en: img/logo.png -->
+    <link rel="icon" type="image/png" href="C:/Users/luis3/Downloads/fotospaginaweb/imglogo.png.png">
+
+    <style>
+
+:root{
+    --bg:#090b10;
+    --bg2:#111521;
+    --glass:rgba(255,255,255,.075);
+    --glass-strong:rgba(255,255,255,.115);
+    --glass-border:rgba(255,255,255,.19);
+    --text:#f7f5ef;
+    --muted:#c5c8d0;
+    --bronze:#d7a84e;
+    --bronze-light:#f2d487;
+    --shadow:0 18px 55px rgba(0,0,0,.30);
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+    scroll-behavior:smooth;
+}
+
+html{scroll-padding-top:105px;}
+
+body{
+    color:var(--text);
+    background:
+        radial-gradient(circle at 10% 15%,rgba(215,168,78,.15),transparent 28%),
+        radial-gradient(circle at 85% 10%,rgba(83,111,190,.18),transparent 30%),
+        radial-gradient(circle at 50% 80%,rgba(142,79,180,.13),transparent 32%),
+        linear-gradient(135deg,#07090d,#10131c 48%,#080a0f);
+    overflow-x:hidden;
+}
+
+body::before,
+body::after{
+    content:"";
+    position:fixed;
+    width:360px;
+    height:360px;
+    border-radius:50%;
+    filter:blur(80px);
+    opacity:.28;
+    pointer-events:none;
+    z-index:-1;
+}
+body::before{
+    background:#c98b32;
+    top:15%;
+    left:-140px;
+}
+body::after{
+    background:#596dca;
+    right:-140px;
+    bottom:10%;
+}
+
+a{color:inherit;}
+
+section{
+    position:relative;
+    padding:105px 5%;
+}
+
+.section-title{
+    color:#fff;
+    text-align:center;
+    font-size:42px;
+    letter-spacing:1px;
+    margin-bottom:12px;
+    text-shadow:0 2px 18px rgba(0,0,0,.4);
+}
+
+.section-subtitle{
+    color:var(--muted);
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 45px;
+    font-size:17px;
+    line-height:1.7;
+}
+
+.gold-line{
+    width:72px;
+    height:4px;
+    margin:0 auto 22px;
+    border-radius:20px;
+    background:linear-gradient(90deg,var(--bronze),var(--bronze-light),var(--bronze));
+    box-shadow:0 0 18px rgba(215,168,78,.45);
+}
+
+/* HEADER LIQUID GLASS */
+header{
+    position:fixed;
+    top:14px;
+    left:4%;
+    right:4%;
+    width:auto;
+    padding:12px 18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:#fff;
+    z-index:1000;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.13),
+        rgba(255,255,255,.045)
+    );
+    backdrop-filter:blur(25px) saturate(160%);
+    -webkit-backdrop-filter:blur(25px) saturate(160%);
+    border:1px solid rgba(255,255,255,.20);
+    border-radius:22px;
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.28),
+        inset 0 1px 0 rgba(255,255,255,.22),
+        inset 0 -1px 0 rgba(255,255,255,.05);
+}
+
+header::before{
+    content:"";
+    position:absolute;
+    inset:1px;
+    border-radius:21px;
+    background:linear-gradient(
+        110deg,
+        rgba(255,255,255,.13),
+        transparent 35%,
+        transparent 65%,
+        rgba(255,255,255,.05)
+    );
+    pointer-events:none;
+}
+
+.logo-container{
+    position:relative;
+    z-index:1;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+}
+
+.logo-img{
+    width:44px;
+    height:44px;
+    object-fit:cover;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.35);
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.25),
+        inset 0 1px 0 rgba(255,255,255,.3);
+}
+
+.logo{
+    color:#fff;
+    font-weight:800;
+    letter-spacing:1px;
+    text-shadow:0 2px 12px rgba(0,0,0,.35);
+}
+
+nav{position:relative;z-index:1;}
+
+nav ul{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    list-style:none;
+}
+
+nav ul li a{
+    display:block;
+    color:#f5f5f5;
+    text-decoration:none;
+    padding:10px 13px;
+    border-radius:14px;
+    font-size:14px;
+    font-weight:700;
+    transition:.25s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    background:rgba(255,255,255,.13);
+    color:var(--bronze-light);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.17),
+        0 5px 18px rgba(0,0,0,.12);
+}
+
+.menu-toggle{
+    display:none;
+    position:relative;
+    z-index:2;
+    border:1px solid rgba(255,255,255,.18);
+    background:rgba(255,255,255,.09);
+    color:#fff;
+    width:43px;
+    height:43px;
+    border-radius:14px;
+    font-size:23px;
+    cursor:pointer;
+}
+
+/* HERO */
+#inicio{
+    min-height:100vh;
+    padding-top:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(90deg,rgba(4,5,8,.78),rgba(4,5,8,.48)),
+        url("C:/Users/luis3/Downloads/fotospaginaweb/fondo.png")
+        center/cover;
+}
+
+#inicio::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at 50% 45%,transparent 0%,rgba(0,0,0,.08) 45%,rgba(0,0,0,.48) 100%);
+    pointer-events:none;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+}
+
+.hero-tag{
+    display:inline-block;
+    color:var(--bronze-light);
+    padding:8px 16px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,.22);
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.2),
+        0 8px 25px rgba(0,0,0,.18);
+}
+
+#inicio h1{
+    margin:22px 0 20px;
+    color:#fff;
+    font-size:clamp(40px,6vw,70px);
+    line-height:1.05;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    text-shadow:0 4px 25px rgba(0,0,0,.65);
+}
+
+#inicio p{
+    max-width:790px;
+    margin:0 auto 32px;
+    color:#f0f1f3;
+    font-size:18px;
+    line-height:1.7;
+    text-shadow:0 2px 12px rgba(0,0,0,.7);
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:13px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:48px;
+    padding:13px 26px;
+    border-radius:16px;
+    text-decoration:none;
+    font-weight:800;
+    transition:.25s;
+    border:1px solid rgba(255,255,255,.22);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.2),
+        0 10px 28px rgba(0,0,0,.18);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+}
+
+.btn-primary{
+    color:#17120d;
+    background:linear-gradient(135deg,rgba(242,212,135,.95),rgba(190,137,48,.92));
+    border-color:rgba(255,255,255,.35);
+}
+
+.btn-outline{
+    color:#fff;
+    background:rgba(255,255,255,.09);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.3),
+        0 15px 35px rgba(0,0,0,.3);
+}
+
+.hero-stats{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+    margin-top:45px;
+}
+
+.hero-stat strong{
+    display:block;
+    color:var(--bronze-light);
+    font-size:26px;
+    text-shadow:0 0 18px rgba(215,168,78,.25);
+}
+
+.hero-stat span{
+    color:#eee;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* GLASS PANELS */
+#empresa,
+#confianza{
+    background:transparent;
+}
+
+.empresa-container,
+.feature-item,
+.trust-card{
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.105),
+        rgba(255,255,255,.035)
+    );
+    backdrop-filter:blur(24px) saturate(140%);
+    -webkit-backdrop-filter:blur(24px) saturate(140%);
+    border:1px solid var(--glass-border);
+    box-shadow:
+        var(--shadow),
+        inset 0 1px 0 rgba(255,255,255,.18);
+}
+
+.empresa-container{
+    max-width:1120px;
+    margin:auto;
+    padding:42px;
+    border-radius:30px;
+}
+
+.empresa-text{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.empresa-text p{
+    color:#e1e3e8;
+    font-size:17px;
+    line-height:1.85;
+    margin-bottom:17px;
+}
+
+.empresa-features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+    margin-top:38px;
+}
+
+.feature-item{
+    padding:26px 19px;
+    border-radius:22px;
+    text-align:center;
+    transition:.3s;
+}
+
+.feature-item:hover{
+    transform:translateY(-5px);
+    background:rgba(255,255,255,.13);
+    border-color:rgba(242,212,135,.4);
+}
+
+.feature-icon{font-size:32px;margin-bottom:13px;}
+
+.feature-item h4{
+    color:#fff;
+    margin-bottom:9px;
+    font-size:17px;
+}
+
+.feature-item p{
+    color:#bfc3cb;
+    font-size:13px;
+    line-height:1.55;
+}
+
+/* GALERIA */
+#galeria{
+    background:transparent;
+}
+.gallery-grid{
+    max-width:1120px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:18px;
+    align-items:stretch;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    cursor:zoom-in;
+    border-radius:26px;
+    border:1px solid rgba(255,255,255,.19);
+    background:rgba(255,255,255,.06);
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.25),
+        inset 0 1px 0 rgba(255,255,255,.18);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    aspect-ratio:4 / 3;
+    min-height:0;
+}
+
+.gallery-item:first-child,
+.gallery-item:nth-child(6),
+.gallery-item:nth-child(9){
+    grid-column:span 2;
+    aspect-ratio:16 / 9;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    object-position:center;
+    transition:transform .8s cubic-bezier(.2,.75,.2,1), filter .6s ease;
+    will-change:transform;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.09);
+    filter:saturate(1.08) contrast(1.03);
+}
+
+.gallery-item::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:1;
+    pointer-events:none;
+    background:
+        linear-gradient(135deg,rgba(255,255,255,.18),transparent 30%,transparent 65%,rgba(215,168,78,.12)),
+        radial-gradient(circle at 50% 120%,rgba(215,168,78,.20),transparent 42%);
+    opacity:.35;
+    transition:opacity .5s ease;
+}
+
+.gallery-item:hover::before{opacity:.9;}
+.gallery-caption{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:35px 18px 16px;
+    color:#fff;
+    font-weight:800;
+    background:linear-gradient(transparent,rgba(0,0,0,.72));
+    text-shadow:0 2px 8px rgba(0,0,0,.5);
+}
+
+/* TRUST */
+.trust-grid{
+    max-width:1050px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.trust-card{
+    padding:30px;
+    border-radius:24px;
+    text-align:center;
+}
+
+.stars{
+    color:var(--bronze-light);
+    letter-spacing:3px;
+    font-size:20px;
+    margin-bottom:14px;
+}
+
+.trust-card p{
+    color:#d1d4db;
+    line-height:1.7;
+    font-size:14px;
+}
+
+.trust-card strong{
+    display:block;
+    color:#fff;
+    margin-top:18px;
+}
+
+/* CONTACT */
+#contacto{
+    background:transparent;
+}
+
+.contacto-sub{
+    color:var(--muted);
+    max-width:700px;
+    margin:0 auto 40px;
+    text-align:center;
+    font-size:17px;
+    line-height:1.7;
+}
+
+.contacto-grid{
+    max-width:950px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.contacto-card{
+    padding:35px 30px;
+    border-radius:26px;
+    text-align:center;
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.10),
+        rgba(255,255,255,.035)
+    );
+    border:1px solid rgba(255,255,255,.18);
+    backdrop-filter:blur(24px) saturate(145%);
+    -webkit-backdrop-filter:blur(24px) saturate(145%);
+    box-shadow:
+        var(--shadow),
+        inset 0 1px 0 rgba(255,255,255,.18);
+}
+
+.contacto-card h3{
+    color:var(--bronze-light);
+    margin-bottom:22px;
+    font-size:21px;
+}
+
+.contacto-card p{
+    color:#dddfe4;
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:14px;
+}
+
+.contact-link{
+    color:#fff;
+    text-decoration:none;
+}
+
+.contact-link:hover{color:var(--bronze-light);}
+
+.social-buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:24px;
+    flex-wrap:wrap;
+}
+
+.social-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:11px 18px;
+    border-radius:15px;
+    text-decoration:none;
+    font-weight:800;
+    font-size:13px;
+    color:#fff;
+    border:1px solid rgba(255,255,255,.17);
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    transition:.25s;
+}
+
+.social-btn:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,.15);
+}
+
+.social-btn svg{width:19px;height:19px;fill:currentColor;}
+
+/* FOOTER */
+footer{
+    background:rgba(0,0,0,.28);
+    color:#a9adb6;
+    text-align:center;
+    padding:25px 15px;
+    border-top:1px solid rgba(255,255,255,.10);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .empresa-features{grid-template-columns:repeat(2,1fr);}
+    .trust-grid{grid-template-columns:1fr;}
+}
+
+@media(max-width:768px){
+    header{
+        top:10px;
+        left:3%;
+        right:3%;
+        border-radius:18px;
+    }
+
+    .logo{font-size:14px;}
+
+    .menu-toggle{display:block;}
+
+    nav{
+        position:absolute;
+        top:calc(100% + 9px);
+        left:0;
+        right:0;
+        display:none;
+        padding:13px;
+        border-radius:20px;
+        background:rgba(18,21,29,.72);
+        backdrop-filter:blur(28px) saturate(160%);
+        -webkit-backdrop-filter:blur(28px) saturate(160%);
+        border:1px solid rgba(255,255,255,.18);
+        box-shadow:var(--shadow);
+    }
+
+    nav.active{display:block;}
+
+    nav ul{
+        flex-direction:column;
+        gap:5px;
+    }
+
+    nav ul li,
+    nav ul li a{width:100%;}
+
+    nav ul li a{text-align:center;}
+
+    section{padding:82px 20px;}
+
+    .section-title{font-size:31px;}
+
+    #inicio{padding:125px 20px 75px;}
+
+    #inicio h1{font-size:38px;}
+    #inicio p{font-size:16px;}
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn{width:min(320px,100%);}
+
+    .hero-stats{gap:25px;}
+
+    .empresa-container{padding:27px 18px;border-radius:24px;}
+
+    .empresa-features,
+    .contacto-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+        grid-auto-rows:230px;
+    }
+
+    .gallery-item:first-child,
+    .gallery-item:nth-child(4n),
+    .gallery-item:nth-child(7n){
+        grid-column:auto;
+        grid-row:auto;
+    }
+}
+
+@media(max-width:430px){
+    #inicio h1{font-size:32px;}
+    .hero-stat strong{font-size:22px;}
+}
+
+
+/* ================= GALERÍA INTERACTIVA LIQUID GLASS ================= */
+.gallery-item{
+    cursor:zoom-in;
+}
+
+.gallery-item::after{
+    content:"Abrir imagen";
+    position:absolute;
+    top:14px;
+    right:14px;
+    padding:7px 11px;
+    border-radius:12px;
+    color:#fff;
+    font-size:10px;
+    font-weight:800;
+    background:rgba(0,0,0,.28);
+    border:1px solid rgba(255,255,255,.18);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    opacity:0;
+    transform:translateY(-5px);
+    transition:.25s;
+}
+
+.gallery-item:hover::after{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.gallery-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:3000;
+    align-items:center;
+    justify-content:center;
+    padding:30px;
+    background:rgba(3,5,9,.72);
+    backdrop-filter:blur(22px) saturate(140%);
+    -webkit-backdrop-filter:blur(22px) saturate(140%);
+}
+
+.gallery-modal.active{
+    display:flex;
+}
+
+.gallery-modal-inner{
+    position:relative;
+    width:min(1100px,94vw);
+    max-height:90vh;
+    padding:12px;
+    border-radius:30px;
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.15),
+        rgba(255,255,255,.055)
+    );
+    border:1px solid rgba(255,255,255,.25);
+    box-shadow:
+        0 30px 90px rgba(0,0,0,.55),
+        inset 0 1px 0 rgba(255,255,255,.25);
+    backdrop-filter:blur(28px) saturate(160%);
+    -webkit-backdrop-filter:blur(28px) saturate(160%);
+}
+
+.gallery-modal-inner img{
+    display:block;
+    width:100%;
+    max-height:78vh;
+    object-fit:contain;
+    border-radius:21px;
+    background:rgba(0,0,0,.35);
+}
+
+.gallery-close{
+    position:absolute;
+    z-index:2;
+    top:-16px;
+    right:-16px;
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.13);
+    color:#fff;
+    font-size:30px;
+    line-height:1;
+    cursor:pointer;
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.3),
+        inset 0 1px 0 rgba(255,255,255,.25);
+    transition:.2s;
+}
+
+.gallery-close:hover{
+    transform:scale(1.07);
+    background:rgba(255,255,255,.2);
+}
+
+.gallery-modal-caption{
+    color:#fff;
+    text-align:center;
+    font-weight:800;
+    padding:12px 10px 5px;
+}
+
+/* ================= ZOOM SELECTIVO ================= */
+.trust-card{
+    position:relative;
+    overflow:hidden;
+    cursor:default;
+    transition:
+        transform .35s cubic-bezier(.2,.8,.2,1),
+        background .35s,
+        border-color .35s,
+        box-shadow .35s;
+}
+
+.trust-card::before{
+    content:"";
+    position:absolute;
+    width:190px;
+    height:190px;
+    left:50%;
+    top:40%;
+    transform:translate(-50%,-50%) scale(.35);
+    border-radius:50%;
+    background:radial-gradient(circle,rgba(242,212,135,.30),transparent 68%);
+    filter:blur(20px);
+    opacity:0;
+    transition:.45s;
+    pointer-events:none;
+}
+
+.trust-card-glow{
+    position:absolute;
+    inset:-1px;
+    border-radius:inherit;
+    background:linear-gradient(
+        120deg,
+        transparent 20%,
+        rgba(255,255,255,.14) 48%,
+        transparent 75%
+    );
+    transform:translateX(-110%);
+    transition:.6s;
+    pointer-events:none;
+}
+
+.trust-card:hover{
+    transform:scale(1.055) translateY(-7px);
+    z-index:3;
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.17),
+        rgba(255,255,255,.07)
+    );
+    border-color:rgba(242,212,135,.42);
+    box-shadow:
+        0 25px 65px rgba(0,0,0,.38),
+        0 0 35px rgba(215,168,78,.10),
+        inset 0 1px 0 rgba(255,255,255,.28);
+}
+
+.trust-card:hover::before{
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+}
+
+.trust-card:hover .trust-card-glow{
+    transform:translateX(110%);
+}
+
+.trust-card .stars,
+.trust-card h3,
+.trust-card p,
+.trust-more{
+    position:relative;
+    z-index:2;
+}
+
+.trust-card h3{
+    color:#fff;
+    margin-bottom:12px;
+    font-size:20px;
+}
+
+.trust-more{
+    display:inline-block;
+    margin-top:18px;
+    color:var(--bronze-light);
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:.5px;
+    opacity:.75;
+    transition:.25s;
+}
+
+.trust-card:hover .trust-more{
+    opacity:1;
+    transform:translateX(3px);
+}
+
+/* ================= BOTONES SOCIALES ================= */
+.btn-social-wa{
+    background:rgba(37,211,102,.16);
+    border-color:rgba(37,211,102,.32);
+}
+
+.btn-social-wa:hover{
+    background:rgba(37,211,102,.26);
+    border-color:rgba(37,211,102,.5);
+}
+
+.btn-social-wa svg{
+    width:19px;
+    height:19px;
+    fill:currentColor;
+}
+
+/* En móvil el visor conserva el efecto vidrio */
+@media(max-width:768px){
+    .gallery-modal{padding:15px;}
+    .gallery-modal-inner{
+        width:96vw;
+        border-radius:23px;
+    }
+    .gallery-close{
+        top:-10px;
+        right:-5px;
+        width:42px;
+        height:42px;
+    }
+    .gallery-modal-inner img{
+        max-height:76vh;
+        border-radius:16px;
+    }
+}
+
+
+/* ================= ZOOM SELECTIVO - NUESTRO TALLER ================= */
+.feature-item{
+    position:relative;
+    overflow:hidden;
+    cursor:default;
+    transform-origin:center;
+    transition:
+        transform .35s cubic-bezier(.2,.8,.2,1),
+        background .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+.feature-item::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    left:50%;
+    top:42%;
+    transform:translate(-50%,-50%) scale(.35);
+    border-radius:50%;
+    background:radial-gradient(
+        circle,
+        rgba(242,212,135,.30),
+        rgba(215,168,78,.10) 35%,
+        transparent 70%
+    );
+    filter:blur(20px);
+    opacity:0;
+    transition:.45s ease;
+    pointer-events:none;
+}
+
+.feature-item::after{
+    content:"";
+    position:absolute;
+    inset:-1px;
+    border-radius:inherit;
+    background:linear-gradient(
+        120deg,
+        transparent 20%,
+        rgba(255,255,255,.16) 48%,
+        transparent 75%
+    );
+    transform:translateX(-110%);
+    transition:.6s ease;
+    pointer-events:none;
+}
+
+.feature-item:hover{
+    transform:scale(1.055) translateY(-7px);
+    z-index:3;
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.17),
+        rgba(255,255,255,.07)
+    );
+    border-color:rgba(242,212,135,.42);
+    box-shadow:
+        0 25px 65px rgba(0,0,0,.38),
+        0 0 35px rgba(215,168,78,.10),
+        inset 0 1px 0 rgba(255,255,255,.28);
+}
+
+.feature-item:hover::before{
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+}
+
+.feature-item:hover::after{
+    transform:translateX(110%);
+}
+
+.feature-item .feature-icon,
+.feature-item h4,
+.feature-item p{
+    position:relative;
+    z-index:2;
+    transition:transform .35s ease;
+}
+
+.feature-item:hover .feature-icon{
+    transform:scale(1.08);
+}
+
+.feature-item:hover h4{
+    color:var(--bronze-light);
+}
+
+/* Mantiene el efecto cómodo en pantallas táctiles */
+@media(max-width:768px){
+    .feature-item:hover{
+        transform:none;
+    }
+
+    .feature-item:hover::before,
+    .feature-item:hover::after{
+        opacity:0;
+    }
+}
+
+
+/* ================= MEJORAS PROFESIONALES ================= */
+:focus-visible{
+    outline:3px solid var(--bronze-light);
+    outline-offset:4px;
+}
+
+img{max-width:100%;}
+
+.process-section{
+    background:linear-gradient(180deg,transparent,rgba(215,168,78,.035),transparent);
+}
+
+.process-grid{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.process-card{
+    position:relative;
+    padding:34px 24px 28px;
+    border-radius:26px;
+    overflow:hidden;
+    background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,255,255,.035));
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:var(--shadow), inset 0 1px 0 rgba(255,255,255,.16);
+    backdrop-filter:blur(18px);
+    transition:transform .3s ease,border-color .3s ease;
+}
+
+.process-card:hover{
+    transform:translateY(-7px);
+    border-color:rgba(242,212,135,.45);
+}
+
+.process-number{
+    position:absolute;
+    right:18px;
+    top:13px;
+    color:rgba(242,212,135,.25);
+    font-size:38px;
+    font-weight:900;
+}
+
+.process-icon{
+    width:58px;
+    height:58px;
+    display:grid;
+    place-items:center;
+    border-radius:18px;
+    margin-bottom:22px;
+    font-size:27px;
+    background:rgba(215,168,78,.11);
+    border:1px solid rgba(242,212,135,.20);
+}
+
+.process-card h3{font-size:19px;margin-bottom:11px;}
+.process-card p{color:var(--muted);font-size:14px;line-height:1.7;}
+
+.quote-section{padding-top:65px;}
+
+.quote-container{
+    max-width:1120px;
+    margin:auto;
+    padding:48px;
+    border-radius:32px;
+    display:grid;
+    grid-template-columns:1fr 1.1fr;
+    gap:45px;
+    background:
+        radial-gradient(circle at 10% 15%,rgba(215,168,78,.22),transparent 35%),
+        linear-gradient(135deg,rgba(255,255,255,.11),rgba(255,255,255,.035));
+    border:1px solid rgba(255,255,255,.19);
+    box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.2);
+    backdrop-filter:blur(24px);
+}
+
+.quote-kicker{
+    color:var(--bronze-light);
+    font-size:11px;
+    letter-spacing:2px;
+    font-weight:900;
+}
+
+.quote-copy h2{
+    margin:16px 0;
+    font-size:clamp(31px,4vw,48px);
+    line-height:1.1;
+}
+
+.quote-copy p{color:var(--muted);line-height:1.8;font-size:16px;}
+
+.quote-steps{display:flex;flex-direction:column;gap:15px;}
+
+.quote-step{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    padding:15px;
+    border-radius:18px;
+    background:rgba(255,255,255,.045);
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.quote-step span{
+    flex:0 0 36px;
+    height:36px;
+    display:grid;
+    place-items:center;
+    border-radius:12px;
+    color:#18130d;
+    background:var(--bronze-light);
+    font-weight:900;
+}
+
+.quote-step h3{font-size:16px;margin-bottom:5px;}
+.quote-step p{color:var(--muted);font-size:13px;line-height:1.5;}
+.quote-button{margin-top:8px;}
+
+.whatsapp-float{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    z-index:2000;
+    width:58px;
+    height:58px;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:25px;
+    color:#fff;
+    background:linear-gradient(135deg,#25D366,#128C7E);
+    box-shadow:0 14px 35px rgba(0,0,0,.35);
+    transition:transform .25s;
+}
+
+.whatsapp-float:hover{transform:translateY(-4px) scale(1.05);}
+
+
+
+@media(max-width:1000px){
+    .process-grid{grid-template-columns:repeat(2,1fr);}
+    .quote-container{grid-template-columns:1fr;}
+}
+
+@media(max-width:768px){
+    .process-grid{grid-template-columns:1fr;}
+    .quote-container{padding:30px 20px;border-radius:25px;gap:28px;}
+    .whatsapp-float{right:16px;bottom:16px;width:54px;height:54px;}
+}
+
+@media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:.01ms !important;
+        scroll-behavior:auto !important;
+    }
+}
+
+
+
+/* ================= ANIMACIÓN EXTRA / ACABADO PREMIUM ================= */
+@keyframes softFloat{
+    0%,100%{transform:translate3d(0,0,0);}
+    50%{transform:translate3d(0,-6px,0);}
+}
+
+@keyframes shimmer{
+    0%{transform:translateX(-120%);}
+    100%{transform:translateX(120%);}
+}
+
+@keyframes borderPulse{
+    0%,100%{box-shadow:0 0 0 rgba(215,168,78,0), inset 0 1px 0 rgba(255,255,255,.18);}
+    50%{box-shadow:0 0 28px rgba(215,168,78,.10), inset 0 1px 0 rgba(255,255,255,.28);}
+}
+
+header{
+    transition:transform .35s ease, background .35s ease, box-shadow .35s ease;
+}
+
+header.scrolled{
+    background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.055));
+    box-shadow:0 18px 55px rgba(0,0,0,.38), inset 0 1px 0 rgba(255,255,255,.25);
+}
+
+.btn,
+.social-btn,
+.menu-toggle{
+    position:relative;
+    overflow:hidden;
+}
+
+.btn::before,
+.social-btn::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    width:35%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.30),transparent);
+    transform:translateX(-180%) skewX(-20deg);
+    transition:transform .6s ease;
+    pointer-events:none;
+}
+
+.btn:hover::before,
+.social-btn:hover::before{
+    transform:translateX(420%) skewX(-20deg);
+}
+
+.btn-primary{
+    animation:borderPulse 3.5s ease-in-out infinite;
+}
+
+.feature-item,
+.process-card,
+.trust-card,
+.contacto-card{
+    transform-origin:center;
+}
+
+.feature-item:hover,
+.process-card:hover,
+.contacto-card:hover{
+    transform:translateY(-7px) scale(1.018);
+}
+
+.process-card::after,
+.contacto-card::after,
+.empresa-container::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:45%;
+    height:100%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.08),transparent);
+    transform:skewX(-18deg);
+    pointer-events:none;
+}
+
+.process-card:hover::after,
+.contacto-card:hover::after,
+.empresa-container:hover::after{
+    animation:shimmer .9s ease;
+}
+
+.process-card,
+.contacto-card,
+.empresa-container{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-tag{
+    animation:softFloat 4s ease-in-out infinite;
+}
+
+.whatsapp-float{
+    animation:floatSoft 3.5s ease-in-out infinite;
+}
+
+.whatsapp-float::after{
+    content:"";
+    position:absolute;
+    inset:-5px;
+    border:1px solid rgba(37,211,102,.30);
+    border-radius:50%;
+    animation:goldPulse 2.6s ease-in-out infinite;
+    pointer-events:none;
+}
+
+@media(max-width:768px){
+    .gallery-grid{
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+    }
+
+    .gallery-item,
+    .gallery-item:first-child,
+    .gallery-item:nth-child(6),
+    .gallery-item:nth-child(9){
+        grid-column:auto;
+        aspect-ratio:4 / 3;
+    }
+
+    .gallery-item:first-child{
+        grid-column:span 2;
+        aspect-ratio:16 / 9;
+    }
+}
+
+@media(max-width:520px){
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-item,
+    .gallery-item:first-child,
+    .gallery-item:nth-child(6),
+    .gallery-item:nth-child(9){
+        grid-column:auto;
+        aspect-ratio:4 / 3;
+    }
+
+    .gallery-item:first-child{
+        aspect-ratio:16 / 10;
+    }
+}
+
+/* ================= ANIMACIONES ================= */
+@keyframes fadeUp{
+    from{opacity:0;transform:translateY(28px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+@keyframes heroGlow{
+    0%,100%{transform:scale(1);opacity:.55;}
+    50%{transform:scale(1.12);opacity:.9;}
+}
+
+@keyframes floatSoft{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+}
+
+@keyframes goldPulse{
+    0%,100%{box-shadow:0 0 12px rgba(215,168,78,.25);}
+    50%{box-shadow:0 0 30px rgba(242,212,135,.65);}
+}
+
+#inicio::before{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:radial-gradient(circle,rgba(215,168,78,.20),transparent 68%);
+    filter:blur(18px);
+    animation:heroGlow 6s ease-in-out infinite;
+    pointer-events:none;
+}
+
+.hero-content > *{
+    animation:fadeUp .8s ease both;
+}
+
+.hero-content > *:nth-child(1){animation-delay:.08s;}
+.hero-content > *:nth-child(2){animation-delay:.18s;}
+.hero-content > *:nth-child(3){animation-delay:.30s;}
+.hero-content > *:nth-child(4){animation-delay:.42s;}
+.hero-content > *:nth-child(5){animation-delay:.54s;}
+
+.hero-stat{
+    animation:floatSoft 4s ease-in-out infinite;
+}
+
+.hero-stat:nth-child(2){animation-delay:.5s;}
+.hero-stat:nth-child(3){animation-delay:1s;}
+
+.gold-line{
+    animation:goldPulse 3s ease-in-out infinite;
+}
+
+.gallery-item{
+    opacity:0;
+    transform:translateY(25px) scale(.97);
+    transition:transform .5s cubic-bezier(.2,.8,.2,1),
+               opacity .5s ease,
+               box-shadow .4s ease,
+               border-color .4s ease;
+}
+
+.gallery-item.show{
+    opacity:1;
+    transform:translateY(0) scale(1);
+}
+
+.gallery-item:hover{
+    transform:translateY(-6px) scale(1.02);
+    border-color:rgba(242,212,135,.48);
+    box-shadow:0 22px 55px rgba(0,0,0,.38),
+               0 0 28px rgba(215,168,78,.12);
+}
+
+.section-title,
+.section-subtitle,
+.empresa-container,
+.trust-card,
+.contacto-card{
+    transition:transform .5s ease,opacity .5s ease;
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+.reveal.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.gallery-modal.active .gallery-modal-inner{
+    animation:modalPop .35s cubic-bezier(.2,.9,.25,1);
+}
+
+@keyframes modalPop{
+    from{opacity:0;transform:scale(.88) translateY(18px);}
+    to{opacity:1;transform:scale(1) translateY(0);}
+}
+
+@media(max-width:768px){
+    .gallery-item:hover{transform:none;}
+}
+
+
+/* ================= GALERÍA - ESPACIADO MEJORADO ================= */
+.gallery-grid{
+    gap:28px;
+}
+
+.gallery-item,
+.gallery-item:first-child,
+.gallery-item:nth-child(6),
+.gallery-item:nth-child(9){
+    grid-column:auto;
+    grid-row:auto;
+    aspect-ratio:4 / 3;
+}
+
+@media(max-width:768px){
+    .gallery-grid{
+        grid-template-columns:1fr 1fr;
+        gap:20px;
+        grid-auto-rows:auto;
+    }
+
+    .gallery-item,
+    .gallery-item:first-child,
+    .gallery-item:nth-child(6),
+    .gallery-item:nth-child(9){
+        grid-column:auto;
+        grid-row:auto;
+        aspect-ratio:4 / 3;
+    }
+}
+
+@media(max-width:520px){
+    .gallery-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .gallery-item,
+    .gallery-item:first-child,
+    .gallery-item:nth-child(6),
+    .gallery-item:nth-child(9){
+        grid-column:auto;
+        grid-row:auto;
+        aspect-ratio:4 / 3;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <a href="#inicio" class="logo-container">
+        <img src="imagenes/imglogo.png.png" alt="Logo Artesanías de Bronce Bobadilla" class="logo-img">
+        <span class="logo">Bronce Bobadilla Estrada</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Abrir menú" onclick="toggleMenu()">☰</button>
+
+    <nav id="mainNav">
+        <ul>
+            <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
+            <li><a href="#empresa" onclick="closeMenu()">Taller</a></li>
+            <li><a href="#galeria" onclick="closeMenu()">Galería</a></li>
+            <li><a href="#contacto" onclick="closeMenu()">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= INICIO ================= -->
+<section id="inicio">
+    <div class="hero-content">
+        <span class="hero-tag">Fundición artesanal en bronce</span>
+
+        <h1>Artesanías de Bronce Bobadilla Estrada</h1>
+
+        <p>
+            Piezas de bronce elaboradas con dedicación, detalle y acabados artesanales.
+            Creamos trabajos personalizados para decoración, reconocimientos,
+            proyectos especiales y espacios únicos.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#galeria" class="btn btn-primary">Ver galería</a>
+            <a href="https://wa.me/525520468327?text=Hola,%20me%20gustaría%20cotizar%20una%20pieza%20de%20bronce" target="_blank" class="btn btn-outline">💬 Cotizar por WhatsApp</a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <strong>100%</strong>
+                <span>Trabajo artesanal</span>
+            </div>
+            <div class="hero-stat">
+                <strong>A medida</strong>
+                <span>Diseños personalizados</span>
+            </div>
+            <div class="hero-stat">
+                <strong>Bronce</strong>
+                <span>Material principal</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= EMPRESA ================= -->
+<section id="empresa">
+    <div class="empresa-container">
+        <div class="gold-line"></div>
+        <h2 class="section-title">Nuestro Taller</h2>
+        <p class="section-subtitle">
+            Tradición, trabajo artesanal y atención a los detalles en cada pieza.
+        </p>
+
+        <div class="empresa-text">
+            <p>
+                En <strong>Artesanías de Bronce Bobadilla Estrada</strong> se combinan técnicas
+                de fundición de maquila artesanal con procesos de acabado para crear piezas
+                decorativas, funcionales y personalizadas.
+            </p>
+
+            <p>
+                Se realizan trabajos como esculturas, placas, candeleros, figuras decorativas
+                y piezas especiales bajo pedido, buscando que cada proyecto tenga un
+                acabado cuidado y de acuerdo con las necesidades del cliente.
+            </p>
+        </div>
+
+        <div class="empresa-features">
+            <div class="feature-item">
+                <div class="feature-icon">🔥</div>
+                <h4>Trabajo artesanal</h4>
+                <p>Atención al detalle durante las diferentes etapas de elaboración.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">🎨</div>
+                <h4>Diseños a medida</h4>
+                <p>Piezas realizadas bajo pedido y de acuerdo con las especificaciones.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">🥉</div>
+                <h4>Acabados en bronce</h4>
+                <p>Opciones de acabado, pulido y pátina según el proyecto.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">🤝</div>
+                <h4>Atención directa</h4>
+                <p>Comunicación directa para conocer el proyecto y preparar una cotización.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= GALERÍA ================= -->
+<section id="galeria">
+    <div class="gold-line"></div>
+    <h2 class="section-title">Galería</h2>
+    <p class="section-subtitle">
+        Piezas y trabajos terminados.
+    </p>
+
+    <!-- Sustituye estas imágenes por fotografías reales del taller cuando las tengas -->
+    
+<div class="gallery-grid">
+
+    <div class="gallery-item" onclick="abrirGaleria(this)">
+        <img loading="lazy" decoding="async" src="imagenes/1.png" alt="Trabajo artesanal en bronce">
+        <div class="gallery-caption"></div>
+    </div>
+
+    <div class="gallery-item" onclick="abrirGaleria(this)">
+        <img loading="lazy" decoding="async" src="imagenes/2.png" alt="Trabajo artesanal en bronce">
+        <div class="gallery-caption"></div>
+    </div>
+
+    <div class="gallery-item" onclick="abrirGaleria(this)">
+        <img loading="lazy" decoding="async" src="imagenes/3.png" alt="Trabajo artesanal en bronce">
+        <div class="gallery-caption"></div>
+    </div>
+
+    <div class="gallery-item" onclick="abrirGaleria(this)">
+        <img loading="lazy" decoding="async" src="imagenes/4.png" alt="Trabajo artesanal en bronce">
+        <div class="gallery-caption"></div>
+    </div>
+
+    <div class="gallery-item" onclick="abrirGaleria(this)">
+        <img loading="lazy" decoding="async" src="imagenes/5.png" alt="Trabajo artesanal en bronce">
+        <div class="gallery-caption"></div>
+    </div>
+
+    <div class="gallery-item" onclick="abrirGaleria(this)">
+        <img loading="lazy" decoding="async" src="imagenes/7.png" alt="Trabajo artesanal en bronce">
+        <div class="gallery-caption"></div>
+    </div>
+
+    <div class="gallery-item" onclick="abrirGaleria(this)">
+        <img loading="lazy" decoding="async" src="imagenes/8.png" alt="Trabajo artesanal en bronce">
+        <div class="gallery-caption"></div>
+    </div>
+
+    <div class="gallery-item" onclick="abrirGaleria(this)">
+        <img loading="lazy" decoding="async" src="imagenes/9.png" alt="Trabajo artesanal en bronce">
+        <div class="gallery-caption"></div>
+    </div>
+
+    <div class="gallery-item" onclick="abrirGaleria(this)">
+        <img loading="lazy" decoding="async" src="imagenes/10.png" alt="Trabajo artesanal en bronce">
+        <div class="gallery-caption"></div>
+    </div>
+
+    <div class="gallery-item" onclick="abrirGaleria(this)">
+        <img loading="lazy" decoding="async" src="imagenes/11.png" alt="Trabajo artesanal en bronce">
+        <div class="gallery-caption"></div>
+    </div>
+
+    <div class="gallery-item" onclick="abrirGaleria(this)">
+        <img loading="lazy" decoding="async" src="imagenes/12.png" alt="Trabajo artesanal en bronce">
+        <div class="gallery-caption"></div>
+    </div>
+
+    <div class="gallery-item" onclick="abrirGaleria(this)">
+        <img loading="lazy" decoding="async" src="imagenes/13.png" alt="Trabajo artesanal en bronce">
+        <div class="gallery-caption"></div>
+    </div>
+
+</div>
+
+<!-- VISOR DE GALERÍA -->
+<div id="galleryModal" class="gallery-modal" aria-hidden="true">
+    <div class="gallery-modal-inner">
+        <button class="gallery-close" onclick="cerrarGaleria()" aria-label="Cerrar">×</button>
+        <img id="galleryModalImg" src="" alt="Imagen ampliada">
+        <div id="galleryModalCaption" class="gallery-modal-caption"></div>
+    </div>
+</div>
+
+</section>
+
+<!-- ================= CONFIANZA ================= -->
+<section id="confianza">
+    <div class="gold-line"></div>
+    <h2 class="section-title">¿Por qué elegirnos?</h2>
+    <p class="section-subtitle">
+        Buscamos que cada proyecto tenga una atención cercana y un resultado acorde con lo solicitado.
+    </p>
+
+    
+<div class="trust-grid">
+
+    <div class="trust-card">
+        <div class="trust-card-glow"></div>
+        <div class="stars">★★★★★</div>
+        <h3>Atención personalizada</h3>
+        <p>Comunicación directa para conocer las necesidades del proyecto y resolver dudas antes de realizar una cotización.</p>
+        <span class="trust-more">Conoce nuestra atención →</span>
+    </div>
+
+    <div class="trust-card">
+        <div class="trust-card-glow"></div>
+        <div class="stars">★★★★★</div>
+        <h3>Trabajos a medida</h3>
+        <p>Posibilidad de solicitar piezas con diferentes dimensiones, diseños y características de acuerdo con cada proyecto.</p>
+        <span class="trust-more">Diseños personalizados →</span>
+    </div>
+
+    <div class="trust-card">
+        <div class="trust-card-glow"></div>
+        <div class="stars">★★★★★</div>
+        <h3>Cuidado en los detalles</h3>
+        <p>El trabajo artesanal permite cuidar los detalles y definir el acabado final de cada pieza.</p>
+        <span class="trust-more">Detalle artesanal →</span>
+    </div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contacto">
+    <div class="gold-line"></div>
+    <h2 class="section-title">Contacto</h2>
+
+    <p class="contacto-sub">
+        Ponte en contacto para cotizar piezas, trabajos personalizados o proyectos especiales.
+    </p>
+
+    <div class="contacto-grid">
+
+        <div class="contacto-card">
+            <h3>Información de contacto</h3>
+
+            <p>
+                <strong>Teléfono / WhatsApp</strong><br>
+                <a class="contact-link" href="tel:+525520468327">+52 (55) 2046 8327</a>
+            </p>
+
+            <p>
+                <strong>Correo electrónico</strong><br>
+                <a class="contact-link" href="mailto:contacto@broncebobadilla.com">contacto@broncebobadilla.com</a>
+            </p>
+
+            <p>
+                <strong>Atención</strong><br>
+                Lunes a Domingo
+            </p>
+        </div>
+
+        <div class="contacto-card">
+            <h3>¿Quieres cotizar?</h3>
+            <p>
+                Envíanos un mensaje con la pieza que necesitas, medidas aproximadas,
+                cantidad y cualquier referencia que tengas.
+            </p>
+
+            <a href="https://wa.me/525520468327?text=Hola,%20me%20gustaría%20obtener%20información%20y%20cotizar%20una%20pieza%20de%20bronce" target="_blank" class="social-btn btn-social-wa">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.53 0 .2 5.32.2 11.88c0 2.09.55 4.13 1.59 5.93L.1 24l6.35-1.66a11.9 11.9 0 0 0 5.63 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.24-6.15-3.45-8.41ZM12.09 21.75h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.77.99 1.01-3.67-.23-.38a9.84 9.84 0 1 1 8.39 4.65Zm5.41-7.39c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+    </svg>
+    Enviar mensaje
+</a>
+
+            <div class="social-buttons">
+                <a href="#" target="_blank" class="social-btn btn-social-fb">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    Ir a Facebook
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<a class="whatsapp-float" href="https://wa.me/525520468327?text=Hola,%20me%20gustaría%20cotizar%20una%20pieza%20de%20bronce" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">💬</a>
+
+<footer>
+    <p>&copy; 2026 Artesanías de Bronce Bobadilla. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+        function toggleMenu(){
+            document.getElementById("mainNav").classList.toggle("active");
+        }
+
+        function closeMenu(){
+            document.getElementById("mainNav").classList.remove("active");
+        }
+
+        document.addEventListener("click", function(e){
+            const nav = document.getElementById("mainNav");
+            const toggle = document.querySelector(".menu-toggle");
+
+            if(nav && nav.classList.contains("active") &&
+               !nav.contains(e.target) && !toggle.contains(e.target)){
+                nav.classList.remove("active");
+            }
+        });
+
+        
+// Pulido de interacción: header dinámico + movimiento sutil del hero.
+const pageHeader = document.querySelector("header");
+const hero = document.getElementById("inicio");
+const heroContent = document.querySelector(".hero-content");
+
+window.addEventListener("scroll", () => {
+    if(pageHeader) pageHeader.classList.toggle("scrolled", window.scrollY > 40);
+
+    if(hero && heroContent && window.innerWidth > 768){
+        const offset = Math.min(window.scrollY * 0.10, 55);
+        heroContent.style.transform = `translate3d(0,${offset}px,0)`;
+    }
+}, {passive:true});
+
+// Movimiento 3D muy ligero al pasar el cursor sobre tarjetas.
+document.querySelectorAll(".feature-item, .process-card, .trust-card, .contacto-card").forEach(card => {
+    card.addEventListener("mousemove", (e) => {
+        if(window.innerWidth <= 768) return;
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - .5;
+        const y = (e.clientY - r.top) / r.height - .5;
+        card.style.transform = `perspective(900px) rotateX(${(-y*3).toFixed(2)}deg) rotateY(${(x*3).toFixed(2)}deg) translateY(-6px)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "";
+    });
+});
+
+const sections = document.querySelectorAll("section[id]");
+        const links = document.querySelectorAll("nav a");
+
+        window.addEventListener("scroll", function(){
+            let current = "";
+
+            sections.forEach(section => {
+                const top = section.offsetTop - 140;
+                if(window.scrollY >= top){
+                    current = section.getAttribute("id");
+                }
+            });
+
+            links.forEach(link => {
+                link.classList.remove("active");
+                if(link.getAttribute("href") === "#" + current){
+                    link.classList.add("active");
+                }
+            });
+        });
+    
+function abrirGaleria(elemento){
+    const modal = document.getElementById("galleryModal");
+    const modalImg = document.getElementById("galleryModalImg");
+    const caption = document.getElementById("galleryModalCaption");
+    const img = elemento.querySelector("img");
+    const text = elemento.querySelector(".gallery-caption");
+
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+    caption.textContent = text ? text.textContent : img.alt;
+
+    modal.classList.add("active");
+    modal.setAttribute("aria-hidden","false");
+    document.body.style.overflow = "hidden";
+}
+
+function cerrarGaleria(){
+    const modal = document.getElementById("galleryModal");
+    modal.classList.remove("active");
+    modal.setAttribute("aria-hidden","true");
+    document.body.style.overflow = "";
+}
+
+document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){
+        cerrarGaleria();
+    }
+});
+
+document.getElementById("galleryModal")?.addEventListener("click", function(e){
+    if(e.target === this){
+        cerrarGaleria();
+    }
+});
+
+
+document.querySelectorAll(".gallery-item").forEach(item => {
+    item.setAttribute("tabindex","0");
+    item.setAttribute("role","button");
+    item.addEventListener("keydown", function(e){
+        if(e.key === "Enter" || e.key === " "){
+            e.preventDefault();
+            abrirGaleria(this);
+        }
+    });
+});
+
+
+// Animaciones al aparecer en pantalla
+const animatedElements = document.querySelectorAll(
+    ".section-title, .section-subtitle, .empresa-container, .trust-card, .contacto-card"
+);
+
+animatedElements.forEach(el => el.classList.add("reveal"));
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12 });
+
+animatedElements.forEach(el => observer.observe(el));
+
+const galleryObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+            galleryObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08 });
+
+document.querySelectorAll(".gallery-item").forEach((item, index) => {
+    item.style.transitionDelay = `${Math.min(index * 70, 350)}ms`;
+    galleryObserver.observe(item);
+});
+
+</script>
+
+</body>
+</html>
