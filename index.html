@@ -1908,6 +1908,142 @@ header.scrolled{
     }
 }
 
+
+/* ================= EXPERIENCIA MÓVIL ================= */
+@media (max-width: 768px){
+    html{
+        scroll-behavior:smooth;
+        overflow-x:hidden;
+        overflow-anchor:none;
+    }
+
+    body{
+        width:100%;
+        min-width:0;
+        overflow-x:hidden;
+        -webkit-text-size-adjust:100%;
+    }
+
+    header{
+        height:64px;
+        padding:0 16px;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index:3000;
+    }
+
+    .logo-container{max-width:calc(100% - 58px);}
+    .logo{font-size:14px;letter-spacing:.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+    .menu-toggle{display:grid;place-items:center;width:44px;height:44px;font-size:22px;border-radius:14px;cursor:pointer;}
+
+    nav{
+        position:fixed;
+        top:72px;
+        left:12px;
+        right:12px;
+        width:auto;
+        max-height:0;
+        overflow:hidden;
+        opacity:0;
+        visibility:hidden;
+        transform:translateY(-8px);
+        transition:max-height .28s ease,opacity .2s ease,transform .28s ease,visibility .28s;
+        border-radius:20px;
+        background:rgba(12,14,20,.97);
+        border:1px solid rgba(255,255,255,.14);
+        box-shadow:0 18px 45px rgba(0,0,0,.42);
+        backdrop-filter:blur(18px);
+    }
+
+    nav.active{
+        max-height:300px;
+        opacity:1;
+        visibility:visible;
+        transform:translateY(0);
+    }
+
+    nav ul{display:flex;flex-direction:column;gap:4px;padding:10px;}
+    nav li,nav a{width:100%;}
+    nav a{display:flex;align-items:center;min-height:48px;padding:0 16px;border-radius:13px;}
+    nav a:active,nav a.active{background:rgba(215,168,78,.13);}
+
+    section{
+        width:100%;
+        min-height:0;
+        padding-left:16px;
+        padding-right:16px;
+        scroll-margin-top:78px;
+    }
+
+    #inicio{
+        min-height:100svh;
+        padding-top:104px;
+        padding-bottom:52px;
+        display:flex;
+        align-items:center;
+    }
+
+    .hero-content{width:100%;max-width:100%;}
+    .hero-tag{font-size:10px;padding:8px 11px;letter-spacing:1.2px;}
+    .hero-content h1{font-size:clamp(34px,10.5vw,48px);line-height:1.04;margin:18px 0 16px;overflow-wrap:anywhere;}
+    .hero-content>p{font-size:15px;line-height:1.7;max-width:100%;}
+
+    .hero-buttons{display:grid;grid-template-columns:1fr;gap:11px;margin-top:24px;}
+    .btn{width:100%;min-height:52px;padding:14px 18px;border-radius:15px;display:flex;align-items:center;justify-content:center;text-align:center;}
+
+    .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:28px;}
+    .hero-stat{padding:13px 7px;border-radius:15px;min-width:0;}
+    .hero-stat strong{font-size:15px;}
+    .hero-stat span{font-size:10px;line-height:1.3;}
+
+    .section-title{font-size:clamp(28px,8vw,38px);line-height:1.1;}
+    .section-subtitle,.contacto-sub{font-size:14px;line-height:1.65;}
+
+    .empresa-container{padding:28px 18px;border-radius:22px;}
+    .empresa-text p{font-size:14px;line-height:1.75;}
+    .empresa-features{grid-template-columns:1fr;gap:12px;}
+    .feature-item{padding:20px 17px;border-radius:18px;}
+
+    .gallery-grid{grid-template-columns:1fr;gap:14px;}
+    .gallery-item,.gallery-item:first-child,.gallery-item:nth-child(6),.gallery-item:nth-child(9){
+        grid-column:auto;grid-row:auto;aspect-ratio:4 / 3;
+    }
+    .gallery-item:first-child{aspect-ratio:4 / 3;}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;}
+
+    .gallery-modal{padding:12px;}
+    .gallery-modal-inner{width:100%;max-width:100%;max-height:88svh;border-radius:18px;padding:8px;}
+    .gallery-modal-inner img{max-height:72svh;border-radius:13px;}
+    .gallery-close{width:42px;height:42px;right:10px;top:10px;}
+
+    .trust-grid,.contacto-grid,.process-grid{grid-template-columns:1fr;gap:14px;}
+    .trust-card,.contacto-card,.process-card{padding:22px 18px;border-radius:20px;}
+    .contact-link{overflow-wrap:anywhere;}
+    .social-btn{width:100%;min-height:50px;}
+
+    footer{padding:28px 16px 90px;text-align:center;}
+    footer p{font-size:11px;line-height:1.6;}
+
+    .whatsapp-float{right:15px;bottom:15px;width:56px;height:56px;}
+
+    /* En móvil evitamos transformaciones que pueden provocar saltos visuales. */
+    .hero-content,.feature-item,.process-card,.trust-card,.contacto-card{transform:none !important;}
+    .hero-content>*{animation:none;}
+}
+
+@media (max-width:380px){
+    header{padding:0 12px;}
+    .logo{font-size:12px;}
+    section{padding-left:13px;padding-right:13px;}
+    .hero-content h1{font-size:32px;}
+    .hero-stats{gap:5px;}
+    .hero-stat{padding:11px 5px;}
+    .hero-stat strong{font-size:13px;}
+    .hero-stat span{font-size:9px;}
+}
+
 </style>
 </head>
 
@@ -2353,6 +2489,29 @@ document.querySelectorAll(".gallery-item").forEach((item, index) => {
     item.style.transitionDelay = `${Math.min(index * 70, 350)}ms`;
     galleryObserver.observe(item);
 });
+
+
+
+// Evita que el navegador restaure una posición de scroll anterior al abrir la página.
+// Esto es especialmente útil en celulares, donde algunos navegadores restauran la última posición.
+(function(){
+    if("scrollRestoration" in history){
+        history.scrollRestoration = "manual";
+    }
+
+    function volverAlInicio(){
+        if(!window.location.hash){
+            window.scrollTo(0,0);
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+        }
+    }
+
+    window.addEventListener("load", volverAlInicio, {once:true});
+    window.addEventListener("pageshow", function(event){
+        if(event.persisted) volverAlInicio();
+    });
+})();
 
 </script>
 
