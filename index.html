@@ -10,7 +10,7 @@
     <meta property="og:locale" content="es_MX">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Artesanías de Bronce Bobadilla Estrada. Fundición artesanal, piezas personalizadas, esculturas, placas, candeleros y trabajos especiales en bronce.">
-    <title>Artesanías de Bronce Bobadilla Esrada | Fundición Artesanal</title>
+    <title>Artesanías de Bronce Bobadilla Estrada | Fundición Artesanal</title>
 
     
     <link rel="icon" type="">
@@ -1542,6 +1542,369 @@ header.scrolled{
         grid-column:auto;
         grid-row:auto;
         aspect-ratio:4 / 3;
+    }
+}
+
+
+
+/* ================= AJUSTE FINAL PARA TELÉFONOS =================
+   El diseño de laptop/PC se conserva. Estos estilos solo entran
+   en pantallas de 768px o menos. */
+@media (max-width: 768px){
+    html{
+        scroll-padding-top:90px;
+    }
+
+    body{
+        width:100%;
+        min-width:0;
+        overflow-x:hidden;
+    }
+
+    header{
+        left:12px;
+        right:12px;
+        top:10px;
+        width:auto;
+        min-height:62px;
+        padding:9px 10px 9px 14px;
+        border-radius:18px;
+    }
+
+    .logo-container{
+        min-width:0;
+        max-width:calc(100% - 52px);
+    }
+
+    .logo{
+        display:block;
+        font-size:13px;
+        line-height:1.2;
+        letter-spacing:.5px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+
+    .menu-toggle{
+        flex:0 0 43px;
+        width:43px;
+        height:43px;
+        padding:0;
+    }
+
+    nav{
+        left:0;
+        right:0;
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+    nav ul{
+        width:100%;
+    }
+
+    nav ul li a{
+        padding:12px 10px;
+        font-size:14px;
+    }
+
+    section{
+        width:100%;
+        padding:76px 16px;
+    }
+
+    #inicio{
+        min-height:100svh;
+        padding:120px 16px 65px;
+    }
+
+    .hero-content{
+        width:100%;
+        max-width:100%;
+    }
+
+    .hero-tag{
+        max-width:100%;
+        padding:8px 12px;
+        font-size:9px;
+        letter-spacing:1.3px;
+    }
+
+    #inicio h1{
+        max-width:100%;
+        margin:18px auto 18px;
+        font-size:clamp(30px,9.5vw,40px);
+        line-height:1.08;
+        letter-spacing:1px;
+        overflow-wrap:anywhere;
+    }
+
+    #inicio p{
+        max-width:100%;
+        font-size:15px;
+        line-height:1.65;
+        margin-bottom:26px;
+    }
+
+    .hero-buttons{
+        width:100%;
+        gap:10px;
+    }
+
+    .btn{
+        width:100%;
+        max-width:360px;
+        min-height:50px;
+        padding:13px 18px;
+        font-size:14px;
+    }
+
+    .hero-stats{
+        width:100%;
+        gap:18px 24px;
+        margin-top:34px;
+    }
+
+    .hero-stat{
+        flex:1 1 80px;
+        min-width:80px;
+    }
+
+    .hero-stat strong{
+        font-size:21px;
+    }
+
+    .hero-stat span{
+        font-size:9px;
+        line-height:1.35;
+    }
+
+    .section-title{
+        font-size:clamp(27px,8vw,34px);
+        line-height:1.15;
+    }
+
+    .section-subtitle,
+    .contacto-sub{
+        max-width:100%;
+        margin-bottom:30px;
+        font-size:15px;
+        line-height:1.65;
+    }
+
+    .empresa-container{
+        width:100%;
+        padding:28px 17px;
+        border-radius:24px;
+    }
+
+    .empresa-text{
+        max-width:100%;
+    }
+
+    .empresa-text p{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .empresa-features{
+        grid-template-columns:1fr;
+        gap:12px;
+        margin-top:28px;
+    }
+
+    .feature-item{
+        padding:22px 17px;
+        border-radius:20px;
+    }
+
+    .feature-item p{
+        font-size:13px;
+    }
+
+    .trust-grid,
+    .contacto-grid,
+    .process-grid{
+        grid-template-columns:1fr;
+        width:100%;
+    }
+
+    .trust-card,
+    .contacto-card,
+    .process-card{
+        width:100%;
+        padding:26px 20px;
+    }
+
+    .contacto-card p{
+        font-size:14px;
+    }
+
+    .social-buttons{
+        width:100%;
+    }
+
+    .social-btn{
+        justify-content:center;
+        width:100%;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+        width:100%;
+    }
+
+    .gallery-item,
+    .gallery-item:first-child,
+    .gallery-item:nth-child(6),
+    .gallery-item:nth-child(9){
+        grid-column:auto;
+        grid-row:auto;
+        width:100%;
+        aspect-ratio:4 / 3;
+    }
+
+    .gallery-item:first-child{
+        aspect-ratio:16 / 10;
+    }
+
+    .gallery-item::after{
+        display:none;
+    }
+
+    .gallery-caption{
+        padding:28px 14px 12px;
+        font-size:13px;
+    }
+
+    .gallery-modal{
+        padding:12px;
+    }
+
+    .gallery-modal-inner{
+        width:100%;
+        max-width:100%;
+        max-height:88svh;
+        padding:8px;
+        border-radius:20px;
+    }
+
+    .gallery-modal-inner img{
+        width:100%;
+        max-height:72svh;
+        border-radius:14px;
+    }
+
+    .gallery-close{
+        top:-8px;
+        right:-4px;
+        width:40px;
+        height:40px;
+        font-size:27px;
+    }
+
+    .gallery-modal-caption{
+        font-size:13px;
+        padding:10px 6px 4px;
+    }
+
+    .quote-container{
+        grid-template-columns:1fr;
+        width:100%;
+        padding:28px 18px;
+        border-radius:24px;
+        gap:25px;
+    }
+
+    .quote-copy h2{
+        font-size:clamp(28px,8vw,38px);
+    }
+
+    .quote-copy p{
+        font-size:15px;
+    }
+
+    .quote-step{
+        padding:13px;
+    }
+
+    .whatsapp-float{
+        right:14px;
+        bottom:14px;
+        width:54px;
+        height:54px;
+        font-size:23px;
+    }
+
+    footer{
+        padding:22px 14px;
+    }
+
+    footer p{
+        font-size:12px;
+        line-height:1.5;
+    }
+}
+
+@media (max-width:380px){
+    header{
+        left:8px;
+        right:8px;
+    }
+
+    .logo{
+        font-size:12px;
+    }
+
+    section{
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+    #inicio{
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+    #inicio h1{
+        font-size:29px;
+    }
+
+    .hero-stats{
+        gap:14px 10px;
+    }
+
+    .hero-stat{
+        min-width:70px;
+    }
+
+    .hero-stat strong{
+        font-size:19px;
+    }
+
+    .hero-stat span{
+        font-size:8px;
+    }
+}
+
+/* Evita efectos hover propios de escritorio en pantallas táctiles. */
+@media (hover:none) and (pointer:coarse){
+    .btn:hover,
+    .social-btn:hover,
+    .gallery-item:hover,
+    .trust-card:hover,
+    .feature-item:hover,
+    .process-card:hover,
+    .contacto-card:hover{
+        transform:none;
+    }
+
+    .gallery-item:hover img{
+        transform:none;
+        filter:none;
     }
 }
 
